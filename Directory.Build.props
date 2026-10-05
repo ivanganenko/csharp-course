@@ -1,0 +1,19 @@
+<!--
+  Общие настройки для ВСЕХ проектов курса (MSBuild подхватывает этот файл автоматически
+  для всех .csproj в этой папке и ниже).
+  Почему так: чтобы не повторять одно и то же в 30+ проектах и чтобы у всех задач
+  были одинаковые «строгие» настройки компилятора.
+-->
+<Project>
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <!-- Nullable reference types: компилятор предупреждает о возможных NullReferenceException -->
+    <Nullable>enable</Nullable>
+    <!-- Implicit usings: System, System.Linq, System.Collections.Generic и др. подключены автоматически -->
+    <ImplicitUsings>enable</ImplicitUsings>
+    <!-- Не превращаем warnings в ошибки, чтобы студент мог запускать тесты по шагам,
+         но агент-преподаватель разбирает каждое предупреждение -->
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+</Project>

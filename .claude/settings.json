@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Read",
+      "Glob",
+      "Grep",
+      "Edit(PROGRESS.md)",
+      "Write(PROGRESS.md)",
+      "Bash(dotnet --version)",
+      "Bash(dotnet --info)",
+      "Bash(dotnet build *)",
+      "Bash(dotnet test *)",
+      "Bash(dotnet run *)",
+      "Bash(git status *)",
+      "Bash(git diff *)",
+      "Bash(git log *)",
+      "Bash(date)"
+    ],
+    "deny": [
+      "Edit(modules/*/starter/*.Tests/**)",
+      "Write(modules/*/starter/*.Tests/**)"
+    ]
+  }
+}

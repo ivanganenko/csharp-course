@@ -1,0 +1,22 @@
+# Build output
+bin/
+obj/
+*.user
+*.suo
+.vs/
+.idea/
+.vscode/
+TestResults/
+*.db
+*.db-shm
+*.db-wal
+
+# Личные настройки Claude Code
+.claude/settings.local.json
+CLAUDE.local.md
+
+# Временные копии для проверки эталонов
+.verify/
+
+.DS_Store
+Thumbs.db

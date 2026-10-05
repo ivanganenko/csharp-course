@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- TargetFramework, Nullable, ImplicitUsings заданы в Directory.Build.props в корне курса -->
+
+  <ItemGroup>
+    <!-- EF Core + провайдер SQLite. Microsoft.Data.Sqlite (SqliteConnection) приходит транзитивно. -->
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="10.0.12" />
+  </ItemGroup>
+</Project>

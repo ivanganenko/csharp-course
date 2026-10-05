@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Module08.Tasks/Module08.Tasks.csproj" />
+  <Project Path="Module08.Tests/Module08.Tests.csproj" />
+</Solution>

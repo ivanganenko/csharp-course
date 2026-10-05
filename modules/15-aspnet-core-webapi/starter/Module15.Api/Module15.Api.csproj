@@ -1,0 +1,7 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <!--
+    Sdk="Microsoft.NET.Sdk.Web" подключает ASP.NET Core (shared framework Microsoft.AspNetCore.App)
+    и добавляет implicit usings для веба (Microsoft.AspNetCore.Builder, Microsoft.AspNetCore.Http и др.).
+    TargetFramework, Nullable, ImplicitUsings заданы в Directory.Build.props в корне курса.
+  -->
+</Project>

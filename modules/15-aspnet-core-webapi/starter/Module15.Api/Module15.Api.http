@@ -1,0 +1,53 @@
+# Ручные запросы к API. Запусти `dotnet run --project Module15.Api`,
+# затем открой этот файл в Rider / Visual Studio / VS Code (расширение REST Client) и жми «Send Request».
+
+@baseUrl = http://localhost:5015
+
+GET {{baseUrl}}/api/ping
+
+###
+
+POST {{baseUrl}}/api/tasks
+Content-Type: application/json
+
+{
+  "title": "Подготовиться к собеседованию",
+  "description": "Повторить DI lifetimes и middleware",
+  "priority": 5
+}
+
+###
+
+GET {{baseUrl}}/api/tasks/1
+
+###
+
+PUT {{baseUrl}}/api/tasks/1
+Content-Type: application/json
+
+{
+  "title": "Подготовиться к собеседованию",
+  "description": "Повторить ещё и EF Core",
+  "priority": 4,
+  "isCompleted": false
+}
+
+###
+
+POST {{baseUrl}}/api/tasks/1/complete
+
+###
+
+GET {{baseUrl}}/api/tasks?status=active&search=собес&page=1&pageSize=10
+
+###
+
+GET {{baseUrl}}/api/diagnostics/counters
+
+###
+
+GET {{baseUrl}}/api/diagnostics/crash
+
+###
+
+DELETE {{baseUrl}}/api/tasks/1
